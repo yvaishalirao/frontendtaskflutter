@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:frontendtaskflutter/introscreen.dart';
 import 'package:frontendtaskflutter/route.dart';
 
+import 'coursehome.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -18,7 +20,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
         routes: {
-        RouteNames.intro :(context)=>const IntroScreen(),
+          RouteNames.intro :(context)=>const IntroScreen(),
+          RouteNames.courseHome:(context)=>const CourseHome()
 
     },
     );

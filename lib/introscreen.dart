@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'route.dart';
+
 class IntroScreen extends StatefulWidget {
   const IntroScreen({super.key});
 
@@ -49,7 +51,9 @@ class _IntroScreenState extends State<IntroScreen> {
                   height: screenHeight * 0.04,
                 ),
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, RouteNames.courseHome);
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.blue,
                     padding: EdgeInsets.zero,
