@@ -38,9 +38,7 @@ class _CourseItemState extends State<CourseItem> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(widget.course.thumbnailUrl,
-                  // height: 110,
-                  // width: double.infinity,
-                  // fit: BoxFit.cover,
+
               ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5),

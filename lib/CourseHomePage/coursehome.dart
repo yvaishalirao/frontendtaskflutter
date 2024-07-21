@@ -7,6 +7,8 @@ import 'package:frontendtaskflutter/course_sorting/courselist.dart';
 import 'package:frontendtaskflutter/CourseHomePage/header.dart';
 import 'package:frontendtaskflutter/CourseHomePage/offers.dart';
 
+import '../responsive.dart';
+
 class CourseHome extends StatefulWidget {
   const CourseHome({super.key});
 
@@ -69,33 +71,39 @@ class _CourseHomeState extends State<CourseHome> {
         child: ListView(
           children: [
             Container(
-              height: 200,
-              decoration: const BoxDecoration(
+              height: ResponsiveUtils.getHeight(context, 0.25),
+              decoration: BoxDecoration(
                 color: Colors.lightBlue,
                 borderRadius: BorderRadius.only(
-                    bottomLeft: Radius.circular(25),
-                    bottomRight: Radius.circular(25)),
+                  bottomLeft: Radius.circular(25),
+                  bottomRight: Radius.circular(25),
+                ),
               ),
-              child: const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+              child: Padding(
+                padding: EdgeInsets.symmetric(
+                  horizontal: ResponsiveUtils.getWidth(context, 0.05),
+                  vertical: ResponsiveUtils.getHeight(context, 0.02),
+                ),
                 child: Column(
                   children: [
-                    SizedBox(height: 10),
+                    SizedBox(height: ResponsiveUtils.getHeight(context, 0.02)),
                     Header(),
-                    SizedBox(height: 10),
+                    SizedBox(height: ResponsiveUtils.getHeight(context, 0.02)),
                     CourseSearch(),
                   ],
                 ),
               ),
             ),
-            const SizedBox(height: 10),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10),
+            SizedBox(height: ResponsiveUtils.getHeight(context, 0.02)),
+            Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: ResponsiveUtils.getWidth(context, 0.02),
+              ),
               child: Column(
                 children: [
                   Offers(),
-                  SizedBox(height: 10), // Adding spacing between Offers and FeaturedCourses
-                  //FeaturedCourses(),
+                  SizedBox(height: ResponsiveUtils.getHeight(context, 0.02)),
+                  // FeaturedCourses(), // Uncomment if needed
                   CategoryCourseList(),
                 ],
               ),
@@ -103,6 +111,8 @@ class _CourseHomeState extends State<CourseHome> {
           ],
         ),
       ),
+
+
     );
   }
 }

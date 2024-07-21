@@ -1,16 +1,23 @@
 # frontendtaskflutter
 
-A new Flutter project.
 
-## Getting Started
+# Introduction
+Welcome to my E-Learning App project!
+As a beginner just starting with the basics of Flutter, I developed this app to learn and apply fundamental concepts of mobile app development. This project represents my initial steps into the world of Flutter and mobile app development.
 
-This project is a starting point for a Flutter application.
+# App Features
+## Main Page
+Introductory Section: The app begins with an introduction to set the stage for users.
+## Course Listing Page:
+Search Bar: Currently non-functional, included for layout purposes.
+Ad Banner: Placeholder for potential advertisements.
+Course Categories: Displayed categories for various courses available.
+Course Filtering: Options to filter courses based on categories.
+## Course Details Page
+Detailed Course Description: Provides comprehensive information about the selected course.
+Enroll Button: Functional, triggers a dialog box upon clicking.
+## Sidebar
+Currently, the sidebar does not have any set functionality but is included for future enhancements.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# DriveLink
+-[Screen Recording of running app](https://drive.google.com/file/d/1dll76Hh0QOCOFRo5PJxHCsi_MFROOgvQ/view?usp=sharing)

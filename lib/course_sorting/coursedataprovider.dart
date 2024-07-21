@@ -153,7 +153,7 @@ class CourseDataProvider {
     Course(
         "7",
         "Financing",
-        "assets/images/c7.jpg",
+        "assets/images/c77.jpg",
         "Master the fundamentals of finance with our course, covering essential topics like budgeting, investing, and financial analysis. Gain the knowledge to make informed financial decisions and achieve your financial goals.",
         "Instructor:Mark Price",
         "01-MAR-2022",
@@ -168,7 +168,7 @@ class CourseDataProvider {
     Course(
         "8",
         "Finance Basics",
-        "assets/images/c8.jpg",
+        "assets/images/c88.jpg",
         "Master the fundamentals of finance with our course, covering essential topics like budgeting, investing, and financial analysis. Gain the knowledge to make informed financial decisions and achieve your financial goals.",
         "Instructor:Ben Awad",
         "01-MAR-2022",
@@ -183,7 +183,7 @@ class CourseDataProvider {
     Course(
         "9",
         "Marketing for Newbies",
-        "assets/images/c9.png",
+        "assets/images/c99.jpg",
         "This is complete marketing master class. In this course, you will learn how to increase sales, approach new clients.",
         "Instructor:Anita Prakash",
         "01-MAR-2022",
@@ -191,14 +191,14 @@ class CourseDataProvider {
         false,
         CourseCategory.marketing,
         70,
-        '4 Hours',
+        '11 Hours',
         20,
         sectionList),
 
     Course(
         "10",
         "UIUX basics",
-        "assets/images/c10.jpg",
+        "assets/images/c100.jpg",
         "This is complete marketing master class. In this course, you will learn how to increase sales, approach new clients.",
         "Instructor:Joseph Jostar",
         "01-MAR-2022",
@@ -213,7 +213,7 @@ class CourseDataProvider {
     Course(
         "11",
         "Fashion Design",
-        "assets/images/c11.jpg",
+        "assets/images/c111.jpg",
         "Dive into the world of UI/UX design with our in-depth course, covering everything from user research to prototyping.",
         "Instructor:Mike W",
         "01-MAR-2022",
@@ -228,7 +228,7 @@ class CourseDataProvider {
     Course(
         "12",
         "MasterChef",
-        "assets/images/c12.jpg",
+        "assets/images/c122.jpg",
         "Discover the art of cooking with our comprehensive course, offering hands-on experience in various cuisines and cooking methods.",
         "Instructor:Rob Moss",
         "01-MAR-2022",
