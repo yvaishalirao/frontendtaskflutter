@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:frontendtaskflutter/introscreen.dart';
+import 'package:frontendtaskflutter/course_sorting/coursearguments.dart';
+import 'package:frontendtaskflutter/coursedetails.dart';
+import 'package:frontendtaskflutter/IntroScreen/introscreen.dart';
 import 'package:frontendtaskflutter/route.dart';
 
-import 'coursehome.dart';
+import 'CourseHomePage/coursehome.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,6 +26,14 @@ class MyApp extends StatelessWidget {
           RouteNames.courseHome:(context)=>const CourseHome()
 
     },
+      onGenerateRoute: (settings){
+        if(settings.name==RouteNames.courseDetails){
+          final args= settings.arguments as CourseArgument;
+          return MaterialPageRoute(builder: (context)=>
+              CourseDetails(course: args.course));
+
+        }
+      },
     );
   }
 }

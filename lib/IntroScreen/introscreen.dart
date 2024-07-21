@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'route.dart';
+import '../route.dart';
 
 class IntroScreen extends StatefulWidget {
   const IntroScreen({super.key});

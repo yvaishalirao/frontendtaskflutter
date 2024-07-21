@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:frontendtaskflutter/course_sorting/coursearguments.dart';
+import 'package:frontendtaskflutter/route.dart';
 
-import 'course_sorting/course.dart';
+import '../course_sorting/course.dart';
 
 class CourseItem extends StatefulWidget {
   final Course course;
@@ -15,10 +17,10 @@ class _CourseItemState extends State<CourseItem> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 450,
+      height: 250,
       width:250,
       child: Padding(
-        padding: const EdgeInsets.all(1),
+        padding:  EdgeInsets.all(1),
         child: Card(
           clipBehavior: Clip.antiAlias,
           elevation: 5,
@@ -27,45 +29,56 @@ class _CourseItemState extends State<CourseItem> {
           ),
           child: InkWell(
             onTap:(){
+              Navigator.pushNamed(context, RouteNames.courseDetails,
+              arguments: CourseArgument(widget.course)
+              );
 
             },
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Image.asset(widget.course.thumbnailUrl,
-                  height: 120, // adjust as needed
-                  width: double.infinity,
-                  fit: BoxFit.cover,),
+                  // height: 110,
+                  // width: double.infinity,
+                  // fit: BoxFit.cover,
+              ),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 5),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(widget.course.title,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 15,
                         fontWeight: FontWeight.bold,
                         color: Colors.grey,
                       ),),
-                      SizedBox(height: 15,),
+                      const SizedBox(height: 15,),
                       Row(
-                        children: [Icon(Icons.person,
+                        children: [const Icon(Icons.person,
                         color: Colors.blue,),
-                          SizedBox(width: 5,),
+                          const SizedBox(width: 5,),
                           Text(widget.course.createdBy,
-                          style:TextStyle(fontSize:12,
+                          style:const TextStyle(fontSize:12,
                           color: Colors.black),),
                         ],
                       ),
-                      SizedBox(height: 10,),
+                      const SizedBox(height: 10,),
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Text('${widget.course.rate}',
-                          style: TextStyle(fontSize: 15),),
+                          Row(
+                            children: [
+                              Icon(Icons.star,
+                                color: Colors.yellow,
+                                size: 25,),
+                              Text('${widget.course.rate}',
+                              style: const TextStyle(fontSize: 15),),
+                            ],
+                          ),
                           Text('\$${widget.course.price}',
-                            style: TextStyle(fontSize: 15,
+                            style: const TextStyle(fontSize: 15,
                                 color: Colors.grey,
                                 fontWeight: FontWeight.bold),),
 

@@ -1,4 +1,4 @@
-import '../coursecategory.dart';
+import 'coursecategory.dart';
 import 'lecture.dart';
 import 'section.dart';
 import 'coursedataprovider.dart';
@@ -17,6 +17,7 @@ class Course {
   final String _createdDate;
 
   final double _rate;
+
 
   bool _isFavorite;
 
@@ -38,6 +39,7 @@ class Course {
       this._createdBy,
       this._createdDate,
       this._rate,
+
       this._isFavorite,
       this._courseCategory,
       this._price,
@@ -68,6 +70,7 @@ class Course {
   CourseCategory get courseCategory => _courseCategory;
 
   double get price => _price;
+
 
   String get duration => _duration;
 

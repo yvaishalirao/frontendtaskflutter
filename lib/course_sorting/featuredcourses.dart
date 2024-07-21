@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:frontendtaskflutter/course_sorting/course.dart';
 import 'package:frontendtaskflutter/course_sorting/coursedataprovider.dart';
-import 'package:frontendtaskflutter/courseitem.dart';
+import 'package:frontendtaskflutter/CourseHomePage/courseitem.dart';
 
 class FeaturedCourses extends StatefulWidget {
   const FeaturedCourses({super.key});
